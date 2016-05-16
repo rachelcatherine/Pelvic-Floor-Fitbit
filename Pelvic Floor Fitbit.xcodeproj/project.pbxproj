@@ -49,6 +49,7 @@
 		97CCDF641CE997B7009E8AA3 /* Pelvic Floor FitbitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pelvic Floor FitbitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97CCDF681CE997B7009E8AA3 /* Pelvic_Floor_FitbitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelvic_Floor_FitbitUITests.swift; sourceTree = "<group>"; };
 		97CCDF6A1CE997B7009E8AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97CCDF781CE9E4E4009E8AA3 /* Pelvic Floor Fitbit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Pelvic Floor Fitbit.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		97CCDF451CE997B7009E8AA3 /* Pelvic Floor Fitbit */ = {
 			isa = PBXGroup;
 			children = (
+				97CCDF781CE9E4E4009E8AA3 /* Pelvic Floor Fitbit.entitlements */,
 				97CCDF461CE997B7009E8AA3 /* AppDelegate.swift */,
 				97CCDF481CE997B7009E8AA3 /* FirstViewController.swift */,
 				97CCDF4A1CE997B7009E8AA3 /* SecondViewController.swift */,
@@ -197,6 +199,11 @@
 					97CCDF421CE997B7009E8AA3 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = SHAQC265VT;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					97CCDF581CE997B7009E8AA3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -413,6 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unisolutions.jnritchie.Pelvic-Floor-Fitbit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,6 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unisolutions.jnritchie.Pelvic-Floor-Fitbit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
